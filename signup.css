@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #232526 0%, #2b5938 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+#signupform {
+    background: rgb(230, 230, 230);
+    padding: 0rem 2rem 1rem 2rem; 
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(34, 89, 56, 0.18);
+    width:25%;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem; 
+    position: relative;
+    animation: popIn 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.95) translateY(40px); opacity: 0; }
+    100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.brand-title {
+    
+   
+    text-align: center;
+   
+   
+    text-shadow: 0 2px 8px #1a2e1a33;
+}
+
+.brand-subtitle {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 0.95rem;
+    color: #b0b3b8;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+#signupform h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #e6e6e6;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+label {
+    font-size: 1rem;
+    color: #b0b3b8;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+input, input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid #3a4d3f;
+    border-radius: 8px;
+    background: #2c2f34;
+    color: #fff;
+    font-size: 1.05rem;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border: 1.5px solid #7ed957;
+    outline: none;
+    background: #232526;
+    box-shadow: 0 0 0 2px #7ed95733;
+}
+
+button {
+    background: linear-gradient(90deg, #7ed957 0%, #232526 100%);
+    color: #232526;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 8px #1a2e1a22;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #232526 0%, #7ed957 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.03);
+}
+
+#signupform p {
+    color: #b0b3b8;
+    text-align: center;
+    font-size: 0.98rem;
+}
+
+#signupform a {
+    color: #7ed957;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+#signupform a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    #signupform {
+        width: 100vw;
+        max-width: 100vw;
+        padding: 1.5rem 0.5rem;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 100vh;
+        justify-content: center;
+    }
+    #signupform h1 {
+        font-size: 1.3rem;
+    }
+    button {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+    .brand-title {
+        font-size: 1.3rem;
+    }
+}
+#logopic{
+    width: 80%;
+    max-height: 300px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
