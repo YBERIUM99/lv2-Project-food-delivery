@@ -5,31 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./ordershead.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
 
       <header>
         <div class="header-content">
+            <div id="infobtn">
+               <i class="fa-solid fa-bars" style="color: #000000; font-size: 1.5rem;"></i>
+            </div>
+            
             <img src="./PICTURES/LOGO NO BG.png" alt="Logo" id="logo">
             <h1 class="brand-title">Foodie Emporium</h1>
 
-            <nav id="navbar">
-                <a href="./Landing.html" class="nav-link">Home</a>
-                <a href="./orderpage.html" class="nav-link">Menu</a>
-                <a href="./ordershead.html" class="nav-link">Orders</a>
-                <a href="#" class="nav-link">Contact<a>
+            
+             
+
                    
-            </nav>
+            
 
         </div>
     </header>
 
-    <section>
+    
+    <div id="infocontent">
+        <button id="infoclosebtn">&times;</button>
+        <div id="infostuff">
+            <h2 class="info-title" id="greeting"></h2>
+            <ul class="info-list">
+                <li><a class="sidelinks" href="./Index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a class="sidelinks" href="./orderpage.html"><i class="fa fa-utensils"></i> Menu</a></li>
+                <li><a class="sidelinks" href="#"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                <li><a class="sidelinks" href="./Profile.html"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a class="sidelinks" href="#"><i class="fa fa-info-circle"></i> About Us</a></li>
+            </ul>
+            <div class="info-footer">
+                <p>Enjoy fast and fresh food delivery!</p>
+                <div class="info-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button id="logout" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section >
 
        
         <div id="orderDetails"></div>
-        <div id="orderTimerx" style="font-size:1.2em; color:#e67e22; margin-top:18px;">dddd</div>
+
+
+        <div id="orderTimer" style="font-size:1.2em; color:#e67e22;">dddd</div>
         
     </section>
     

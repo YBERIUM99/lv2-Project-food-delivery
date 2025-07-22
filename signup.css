@@ -10,6 +10,18 @@ body {
     justify-content: center;
     font-family: 'Roboto', Arial, sans-serif;
 }
+input{
+  color: black;
+}
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(255,255,255,0.05);
+}
 
 #signupform {
     background: rgb(230, 230, 230);
@@ -83,7 +95,7 @@ input, input {
 input[type="email"]:focus, input[type="password"]:focus {
     border: 1.5px solid #7ed957;
     outline: none;
-    background: #232526;
+    
     box-shadow: 0 0 0 2px #7ed95733;
 }
 
@@ -152,4 +164,124 @@ button:hover {
     object-fit: contain;
     margin: 0 auto;
     display: block;
+}
+
+.signup-form {
+  background: rgba(255,255,255,0.92);
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44,62,80,0.12);
+  max-width: 700px;
+  width: 100%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Increase the width of the signup form for better input space */
+.signup-form, #signupform {
+  max-width: 480px;
+  width: 95vw;
+}
+
+/* Make sure inputs use full width inside the form */
+.form-group input {
+  width: 100%;
+}
+
+.brand-title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#logopic {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #e67e22;
+  font-weight: 600;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.form-group input {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  background: #fafafa;
+  transition: border 0.2s;
+}
+
+.form-group input:focus {
+  border: 1.5px solid #e67e22;
+  outline: none;
+}
+
+.signup-btn {
+  background: linear-gradient(90deg, #e67e22 60%, #f8b500 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  padding: 0.9rem 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(230,126,34,0.10);
+  transition: background 0.2s, transform 0.15s;
+}
+
+.signup-btn:hover {
+  background: #cf711f;
+  transform: scale(1.04);
+}
+
+.signin-link {
+  text-align: center;
+  margin-top: 0.7rem;
+  font-size: 1rem;
+}
+
+.signin-link a {
+  color: #e67e22;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .signup-form, #signupform {
+    max-width: 98vw;
+    width: 98vw;
+  }
+  .signup-form {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | Foodie Emporium</title>
+    <link rel="stylesheet" href="./profile.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <header>
+        <div class="header-content">
+            <div id="infobtn">
+               <i class="fa-solid fa-bars" style="color: #000000; font-size: 1.5rem;"></i>
+            </div>
+            
+            <img src="./PICTURES/LOGO NO BG.png" alt="Logo" id="logo">
+            <h1 class="brand-title">Foodie Emporium</h1>
+
+            
+             
+
+                   
+            
+
+        </div>
+    </header>
+
+
+    <div id="infocontent">
+        <button id="infoclosebtn">&times;</button>
+        <div id="infostuff">
+            <h2 class="info-title" id="greeting"></h2>
+            <ul class="info-list">
+                <li><a class="sidelinks" href="./Index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a class="sidelinks" href="./orderpage.html"><i class="fa fa-utensils"></i> Menu</a></li>
+                <li><a class="sidelinks" href="#"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                <li><a class="sidelinks" href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a class="sidelinks" href="#"><i class="fa fa-info-circle"></i> About Us</a></li>
+            </ul>
+            <div class="info-footer">
+                <p>Enjoy fast and fresh food delivery!</p>
+                <div class="info-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button id="logout" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="./PICTURES/LOGO NO BG.png" alt="Logo" class="profile-logo">
+            <h2>User Profile</h2>
+        </div>
+        <form id="profileForm" class="profile-form">
+            <div class="profile-row">
+                <div class="profile-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" disabled>
+                </div>
+                <div class="profile-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" disabled>
+                </div>
+            </div>
+            <div class="profile-row">
+                <div class="profile-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" disabled>
+                </div>
+                <div class="profile-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" disabled>
+                </div>
+            </div>
+            <div class="profile-row">
+                <div class="profile-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" disabled>
+                </div>
+                <div class="profile-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" disabled>
+                </div>
+            </div>
+            <div class="profile-row">
+                <div class="profile-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" disabled>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="profile-group">
+                    <label for="favFood">Favourite Food</label>
+                    <input type="text" id="favFood" name="favFood" disabled>
+                </div>
+            </div>
+            <div class="profile-row">
+                <div class="profile-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" rows="2" disabled></textarea>
+                </div>
+            </div>
+            <button type="button" id="editSaveBtn" class="profile-btn">Edit</button>
+        </form>
+    </div>
+    
+    <script src="./profile.js" type="module"></script>
+</body>
+</html>

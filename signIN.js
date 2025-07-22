@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
-import { app } from "../FIREBASE/firebase.js";
+import { app } from "./firebase.js";
 
 const auth = getAuth(app);
 
@@ -23,8 +23,12 @@ const handleSignIn = async (e) => {
         console.log(error.code);
         if (error.code === "auth/invalid-credential") {
             errormessageEl.innerHTML = "Invalid email or password";
-        } else {
-            errormessageEl.innerHTML = "An error occurred. Please try again.";
+        }
+         else if (error.code === "auth/missing-password") {
+            errormessageEl.innerHTML = " Please put in a Password.";
+        }
+        else{
+              errormessageEl.innerHTML ="An Error Occured . Try Again Later "
         }
     }
     finally {
