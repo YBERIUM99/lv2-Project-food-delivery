@@ -64,11 +64,17 @@ signOut(auth).then(() => {
     window.location.href = "./orderpage.html";
   } catch (error) {
     console.error("Signup error:", error.code, error.message);
-      if (error.code === "auth/invalid-credential") {
-            errormessageEl.innerHTML = "Invalid email or password";
+      if (error.code === "auth/email-already-in-use") {
+            errormessageEl.innerHTML = "User already exists";
         }
          else if (error.code === "auth/missing-password") {
             errormessageEl.innerHTML = " Please put in a Password.";
+        }
+        else if (error.code === "auth/invalid-email") {
+            errormessageEl.innerHTML = "Please put in a valid email.";
+        }
+         else if (error.code === "auth/weak-password") {
+            errormessageEl.innerHTML = "Password should be at least 6 characters.";
         }
         else{
               errormessageEl.innerHTML ="An Error Occured . Try Again Later "
